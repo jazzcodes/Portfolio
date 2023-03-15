@@ -1,0 +1,172 @@
+*, *::after,*::before{
+    box-sizing: border-box;
+}
+
+:root{
+
+}
+
+html{
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+body{
+    border: 2px solid black;
+    min-width:320px;
+    max-width: 100%;
+    height: 100%;
+    font-size: 2rem;
+
+}
+
+.container{
+    padding:2rem;
+}
+
+header{
+    border:2px solid purple;
+    min-width:320px;
+    background-color: lightpink;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__item{
+    border:2px solid darkorchid;
+    background-color: plum;
+    display: inline;
+
+}
+
+.brand{
+    display: flex;
+    justify-content: space-evenly;
+    gap:2rem;
+}
+
+nav{
+    display: none;
+}
+
+.btn{
+    display: none;
+}
+
+/* .menu{
+    display: visible;
+    opacity: 1;
+} */
+
+
+main{
+    border: lightgreen;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+   
+
+}
+
+.main__item{
+    border:2px solid darkgreen;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    gap:2rem;
+    height: 40%;
+
+}
+
+.hero__item{
+    border:2px solid darkslateblue;
+}
+
+
+.showcase__item{
+    border:2px solid brown;
+    background-color: lightcoral;
+    display: inline;
+}
+
+.showcase{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:2rem;
+}
+
+.showcase__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase__projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.project{
+    display: inline-block;
+    background-color: blanchedalmond;
+    border: 2px solid rgb(242, 91, 91);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:820px)
+{
+    nav, .btn{
+        display: initial;
+
+    }
+
+    .menu{
+        display: none;
+
+    }
+
+    .showcase__projects{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:1rem;
+    }
+
+    .project{
+        width:40%;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+ 
+}
+
+@media screen and (min-width:1024px)
+{
+    .hero{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .showcase__content{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap:1rem;
+    }
+}
