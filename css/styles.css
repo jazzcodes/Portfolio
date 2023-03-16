@@ -176,16 +176,20 @@ main{
     justify-content: flex-start;
     align-items: flex-start;
     gap:2rem;
+  
 }
 
 .showcase__content{
     display: flex;
     flex-direction: column;
+    width:100%;
 }
 
 .showcase__projects{
     display: flex;
     flex-direction: column;
+    width:100%;
+    justify-content: space-evenly;
 }
 
 .project{
@@ -193,6 +197,8 @@ main{
     background-color: blanchedalmond;
     border: 2px solid rgb(242, 91, 91);
 }
+
+
 
 footer{
     display: flex;
