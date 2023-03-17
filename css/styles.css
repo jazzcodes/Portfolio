@@ -32,7 +32,7 @@ html{
 
 
 body{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     min-width:320px;
     max-width: 100%;
     height: 100%;
@@ -56,18 +56,22 @@ header{
 }
 
 .header__item{
-    border:2px solid darkorchid;
-    background-color: plum;
+    /* border:2px solid darkorchid;
+    background-color: plum; */
     display: inline;
 
 }
 
 .logo{
+
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 2.5rem;
+}
+
+.gradient-text{
     background-image: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Bai Jamjuree', sans-serif;
-    font-size: 2.5rem;
 }
 
 .menu{
@@ -104,7 +108,7 @@ nav{
 
 .nav__list{
     display: flex;
-    gap:2rem;
+    gap:3rem;
     
 
     
@@ -117,7 +121,7 @@ nav{
 
 .nav__item a{
     text-decoration: none;
-    color: white;
+    color: gainsboro;;
     font-family: 'Inter', sans-serif;
     font-size: 1.7rem;
     font-weight: 400;
@@ -130,6 +134,57 @@ nav{
 .btn{
     display: none;
 }
+
+.btn,.button{
+    outline:none;
+    border:0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+
+
+.btn--header{
+    background-color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding:1.5rem;
+    padding-left:3rem;
+    padding-right:3rem;
+    border-radius: 3rem;
+}
+
+.button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    padding:1.2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 2rem;
+   
+}
+.btn--hero-gradient{
+    background-image: var(--gradient);
+    width:60%;
+
+}
+
+.btn--hero-normal{
+    background-color: black;
+    border:1px solid white;
+    width: 80%;
+}
+
+.hero-buttons{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+
+}
+
 
 /* .menu{
     display: visible;
@@ -153,17 +208,39 @@ main{
 .hero{
     display: flex;
     flex-direction: column;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     gap:2rem;
     height: 40%;
 
 }
 
 .hero__item{
-    border:2px solid darkslateblue;
+    /* border:2px solid darkslateblue; */
+    max-width:400px;
 }
 
+.hero__content{
+    max-width: 268px;
+   
+}
 
+.hero__heading{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 2.8rem;
+    color: white;
+   
+}
+
+.hero__matter{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    color: gainsboro;
+
+}
+
+.hero__image{
+   width: 100%;
+}
 .showcase__item{
     border:2px solid brown;
     background-color: lightcoral;
@@ -216,6 +293,7 @@ footer{
     }
 
 
+
     .menu{
         display: none;
 
@@ -235,6 +313,31 @@ footer{
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .hero-buttons{
+        margin-top: 1rem;
+        flex-direction: row;
+    }
+
+    .hero__content{
+        max-width: 700px;
+    }
+   
+    .hero__heading{
+        font-size: 5rem;
+       
+    }
+
+    .btn--hero-gradient{
+       
+        width:20%;
+    
+    }
+    
+    .btn--hero-normal{
+
+        width: 30%;
+    }
  
 }
 
@@ -252,4 +355,26 @@ footer{
         align-items: center;
         gap:1rem;
     }
+
+
+    .hero__content{
+        max-width: 480px;
+    }
+   
+    .hero__heading{
+        font-size: 5rem;
+       
+    }
+
+    .btn--hero-gradient{
+       
+        width:30%;
+    
+    }
+    
+    .btn--hero-normal{
+
+        width: 40%;
+    }
+
 }
