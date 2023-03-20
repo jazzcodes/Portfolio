@@ -29,12 +29,29 @@
           </ul>
         </nav>
       </div>
-      <div class="menu header__item">
-        <div class="menu-bar"></div>
-        <div class="menu-bar special-bar"></div>
-        <div class="menu-bar"></div>
+
+      <div class="collapsible">
+        <div class="menu header__item collapsible__icon">
+          <div class="menu-bar"></div>
+          <div class="menu-bar special-bar"></div>
+          <div class="menu-bar"></div>
+        </div>
+        <ul class="nav-vertical collapsible__content">
+          <li class="nav-vertical__item"><a href="#">Home</a></li>
+          <li class="nav-vertical__item">
+            <a href="#hero">About</a>
+          </li>
+          <li class="nav-vertical__item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="nav-vertical__item">
+            <a href="https://jazzcodes.github.io/">Blog</a>
+          </li>
+        </ul>
       </div>
-      <button class="btn btn--header header__item">Let's Talk</button>
+      <button class="btn btn--header header__item">
+        <a href="mailto:jasleenbhambra@gmail.com">Let's Talk</a>
+      </button>
     </header>
 
     <main>
@@ -49,8 +66,12 @@
             Responsive Web Design.
           </p>
           <div class="hero-buttons">
-            <button class="button btn--hero-gradient">Get in Touch</button>
-            <button class="button btn--hero-normal">View all Works</button>
+            <button class="button btn--hero-gradient">
+              <a href="mailto:jasleenbhambra@gmail.com">Get in Touch</a>
+            </button>
+            <button class="button btn--hero-normal">
+              <a href="#projects">View all Works</a>
+            </button>
           </div>
         </div>
 
@@ -152,5 +173,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
