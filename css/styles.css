@@ -70,6 +70,7 @@ header{
 .logo{
 
     font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 700;
     font-size: 2.5rem;
 }
 
@@ -255,6 +256,7 @@ main{
 
 .hero__heading,.showcase__heading{
     font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 700;
     font-size: 3.1rem;
     color: var(--color-text);
 
@@ -306,20 +308,21 @@ main{
     width:100%;
     justify-content: flex-start;
     align-items: flex-start;
-    gap:1rem;
+    gap:2.5rem;
 }
 
 .project{
     display: inline-block;
     background-color: #1C1C22;;
     /* border: 2px solid rgb(242, 91, 91); */
-    border-radius: 4rem;
+    border-radius: 1.5rem;
     overflow: hidden;
     max-width: 300px;
 
 }
 
 .project__image{
+
   
   
     
@@ -328,14 +331,15 @@ main{
 .project__image img{
 
     width:100%;
-    height: 80%;
+    height: 200px;
+    
   
   
 }
 
 .project__content{
     font-family: 'Inter', sans-serif;
-    padding: 1rem;
+    padding: 2rem;
     margin-top:-2rem;
    
 
@@ -343,7 +347,7 @@ main{
 
 .project__heading{
     font-size: 2rem;
-    color: white;
+    color: var(--color-text);
     font-weight: 600;
    
 }
@@ -351,6 +355,7 @@ main{
 .project__matter{
     font-size: 1.5rem;
     color:var(--color-text);
+    margin-top: -1rem;
    
 }
 
@@ -360,18 +365,20 @@ footer{
     display: flex;
     flex-direction: column;
     color: white;
-    gap:1rem;
+    gap:0.5rem;
     
 
 }
 
 .info__item .logo{
     color:var(--color-text);
+    font-family: 'Inter', sans-serif;
 }
 
 .copyright{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Bai Jamjuree', sans-serif;
     font-size: 1.2rem;
+    font-weight: 400;
     color: var(--color-text);
     
 
@@ -381,31 +388,32 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap:1rem;
+    gap:2rem;
 }
 
 .links{
     display: flex;
-    gap:1rem;
+    gap:4rem;
     list-style: none;
     padding-left: 0rem;
     justify-content: flex-start;
 }
 
 .link a{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Bai Jamjuree', sans-serif;
     text-decoration: none;
-    color: white;
+    color: var(--color-text);
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 700;
 
 }
 
 .image-links{
     list-style: none;
     display: flex;
-    gap:2rem;
-    padding-left:0;
+    gap:1rem;
+    padding-left:0rem;
+ 
  
 }
 
@@ -414,29 +422,35 @@ footer{
     background: linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
                 var(--gradient) border-box;
         border-radius: 50%;
-        border: 2px solid transparent;
+        border: 1px solid transparent;
       
   
-    width:50px;
-    height: 50px;
+    width:30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin-top:-2rem;
+   
 }
 
 .image-link a{
-    width:20px;
-    height: 20px;
- 
+    /* width:20px;
+    height: 20px; */
+  
 }
 
+.image-link img{
+    width:12px;
+    height: 12px;
+}
 
 
 .contacts{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    
 }
 
   
@@ -508,7 +522,7 @@ footer{
     hr{
         margin-left:5rem;
         margin-right: 5rem;
-        background-color: var(--color-text);
+        border-color:#f0f2f56f;
         
     }
 
@@ -547,11 +561,12 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        gap:1rem;
+        gap:5rem;
     }
 
     .project{
         width:40%;
+       
     }
 
     footer{
@@ -572,6 +587,10 @@ footer{
     .hero__heading{
         font-size: 5rem;
        
+    }
+
+    .showcase__matter{
+        font-size: 1.2rem;
     }
 
     .btn--hero-gradient{
@@ -608,7 +627,18 @@ footer{
 
     .contacts{
         justify-content: space-around;
+        gap:2rem;
+        
     }
+
+    .image-links{
+        justify-content: flex-end;
+    }
+
+    .links a{
+        font-weight: 400;
+    }
+
 }
 
 @media screen and (min-width:1024px)
