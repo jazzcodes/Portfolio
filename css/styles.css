@@ -224,6 +224,8 @@ main{
     /* border: lightgreen; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap:2rem;
    
 
@@ -317,7 +319,16 @@ main{
     /* border: 2px solid rgb(242, 91, 91); */
     border-radius: 1.5rem;
     overflow: hidden;
-    max-width: 300px;
+    max-width: 271px;
+    max-height: 310px;
+
+
+}
+
+.project__container{
+
+    /* width:100%; */
+
 
 }
 
@@ -464,6 +475,9 @@ footer{
     max-height: 100vh; 
     opacity:1; } 
     
+.collapsible--expanded .collapsible__icon{
+    display: none;
+}
 
     .nav-vertical{
         width: 50%;
@@ -565,7 +579,7 @@ footer{
     }
 
     .project{
-        width:40%;
+        /* width:40%; */
        
     }
 
@@ -627,7 +641,7 @@ footer{
 
     .contacts{
         justify-content: space-around;
-        gap:2rem;
+        gap:4rem;
         
     }
 
@@ -645,6 +659,10 @@ footer{
 {
 
 
+    .showcase{
+        /* padding-left:20rem;
+        padding-right: 20rem; */
+    }
 
     .hero{
         flex-direction: row;
@@ -704,18 +722,27 @@ footer{
 
     .showcase__projects{
         justify-content: space-between;
-        gap:3rem;
+        gap:5rem;
     }
 
  
     .project{
-        max-width:40%;
+        min-width:380px;
+        min-height: 400px;
+    
     }
-
+    
+    .project-container{
+        width:40%;
+    }
     /* .container{
         padding-left:5rem;
         padding-right: 5rem;
     } */
+
+    .project__image img{
+        height:260px;
+    }
 
     hr{
         margin-left:5rem;
