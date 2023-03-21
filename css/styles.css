@@ -631,13 +631,13 @@ footer{
     }
 
     .container{
-        padding-left:10rem;
-        padding-right: 10rem;
+        padding-left:20rem;
+        padding-right: 20rem;
     }
 
     hr{
-        margin-left:10rem;
-        margin-right: 10rem;
+        margin-left:20rem;
+        margin-right: 20rem;
         
         
     }
