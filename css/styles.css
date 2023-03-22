@@ -540,7 +540,8 @@ footer{
     .nav-vertical a:hover{
     
         color: white;
-        /* background-image: var(--gradient); */
+        background-image: var(--gradient);
+        
         
     }
     
