@@ -45,6 +45,7 @@ body{
     height: 100%;
     font-size: 2rem;
     background-color: var(--color-bg);
+    overflow-x: hidden;
   
     /* color: var(--color-text); */
     /* display: flex;
