@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
@@ -18,56 +22,90 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap"
       rel="stylesheet"
     />
+
     <title>Home</title>
   </head>
   <body>
-    <header class="container" id="nav">
-      <div class="brand header__item">
-        <div class="logo gradient-text">Jasleen.</div>
-        <nav>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="index.html" target="_blank">Home</a>
+    <div class="">
+      <header class="container" id="nav">
+        <div class="brand header__item">
+          <div class="logo gradient-text">Jasleen.</div>
+          <nav>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" target="_blank">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="index.html" target="_blank">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="projects.html" target="_blank">Projects</a>
+              </li>
+              <li class="nav__item">
+                <a href="https://jazzcodes.github.io/">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- <div class="">
+          <ul class="nav-vertical">
+            <li class="nav-vertical__item"><a href="index.html">Home</a></li>
+            <li class="nav-vertical__item">
+              <a href="#hero" target="_blank">About</a>
             </li>
-            <li class="nav__item">
-              <a href="index.html" target="_blank">About</a>
-            </li>
-            <li class="nav__item">
+            <li class="nav-vertical__item">
               <a href="projects.html" target="_blank">Projects</a>
             </li>
-            <li class="nav__item">
-              <a href="https://jazzcodes.github.io/">Blog</a>
+            <li class="nav-vertical__item">
+              <a href="https://jazzcodes.github.io/" target="_blank">Blog</a>
             </li>
           </ul>
-        </nav>
-      </div>
+          <button class="hamburger">
+            <div class="menu header__item open">
+              <div class="menu-bar"></div>
+              <div class="menu-bar special-bar"></div>
+              <div class="menu-bar"></div>
+            </div>
+            <i class="closeIcon material-icons">close</i>
+          </button>
+        </div> -->
 
-      <div class="collapsible">
-        <div class="menu header__item collapsible__icon">
-          <div class="menu-bar"></div>
-          <div class="menu-bar special-bar"></div>
-          <div class="menu-bar"></div>
-        </div>
-        <ul class="nav-vertical collapsible__content">
-          <li class="nav-vertical__item"><a href="index.html">Home</a></li>
-          <li class="nav-vertical__item">
-            <a href="#hero" target="_blank">About</a>
+        <ul class="vertical-menu">
+          <li><a class="menuItem" href="index.html">Home</a></li>
+          <li><a class="menuItem" href="#hero" target="_blank">About</a></li>
+          <li>
+            <a class="menuItem" href="projects.html" target="_blank"
+              >Projects</a
+            >
           </li>
-          <li class="nav-vertical__item">
-            <a href="projects.html" target="_blank">Projects</a>
-          </li>
-          <li class="nav-vertical__item">
-            <a href="https://jazzcodes.github.io/" target="_blank">Blog</a>
+          <li>
+            <a
+              class="menuItem"
+              href="https://jazzcodes.github.io/"
+              target="_blank"
+              >Blog</a
+            >
           </li>
         </ul>
-      </div>
-      <button class="btn btn--header header__item">
-        <a href="mailto:jasleenbhambra@gmail.com">Let's Talk</a>
-      </button>
-    </header>
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="menuIcon material-icons">menu</i>
+          <!-- <div class="menu header__item menuIcon material-icons">
+            <div class="menu-bar"></div>
+            <div class="menu-bar special-bar"></div>
+            <div class="menu-bar"></div>
+          </div> -->
+          <i class="closeIcon material-icons">close</i>
+        </button>
 
+        <button class="btn btn--header header__item">
+          <a href="mailto:jasleenbhambra@gmail.com">Let's Talk</a>
+        </button>
+      </header>
+    </div>
     <main>
-      <div class="container-special">
+      <div class="">
         <div class="hero main__item container" id="hero">
           <div class="hero__content hero__item">
             <p class="hero__heading">
