@@ -278,7 +278,7 @@ main{
     /* background-color: lightblue; */
     gap:2rem;
     height: 40%;
-
+    width: 100vw;
 }
 
 .hero__item{
@@ -290,6 +290,7 @@ main{
     /* min-width: 258px; */
     
     max-width: 290px;
+    
    
 }
 
@@ -356,8 +357,9 @@ main{
     /* border: 2px solid rgb(242, 91, 91); */
     border-radius: 1.5rem;
     overflow: hidden;
-    max-width: 271px;
-    max-height: 310px;
+    /* max-width: 271px;
+    max-height: 310px; */
+    max-width: 324px;
 
 
 }
@@ -380,6 +382,7 @@ main{
 
     width:100%;
     height: 200px;
+    /* max-width:271px; */
     object-fit: cover;
     
   
@@ -576,7 +579,7 @@ footer{
     right: 0;
     bottom: 0;
     z-index: 99;
-    background: black;
+    background: var(--color-bg);
     color: white;
     list-style: none;
     padding-top: 14rem;
@@ -631,8 +634,8 @@ footer{
     .vertical-menu a{
         display: inline-block;
         padding: 2rem;
-        padding-left:7rem;
-        padding-right: 7rem;
+        padding-left:4.5rem;
+        padding-right: 4.5rem;
         text-decoration: none;
         font-size: 2rem;
         font-weight: 400;
@@ -641,7 +644,7 @@ footer{
         
     }
     
-    .nav-vertical a:hover{
+    .vertical-menu li:hover{
     
         color: white;
         background-image: var(--gradient);
@@ -650,7 +653,7 @@ footer{
     }
     
     .vertical-menu a:hover{
-        background-image: var(--gradient);
+        /* background-image: var(--gradient); */
     
     }
 
@@ -725,7 +728,7 @@ footer{
 
     .strip{
         /* width:110vw; */
-        width: 105vw;
+        width: 100vw;
         height:5rem;
         background-color: var(--color-text);
         display: flex;
@@ -758,6 +761,7 @@ footer{
 
 
 
+
     .menu{
         display: none;
 
@@ -768,6 +772,7 @@ footer{
         flex-wrap: wrap;
         justify-content: flex-start;
         gap:5rem;
+     
     }
 
     .project{
@@ -853,10 +858,17 @@ footer{
         width:40%;
     }
 
+    .project__image img{
+        /* max-width:326px; */
+    }
+
+    .project{
+        
+    }
 
 }
 
-@media screen and (min-width:1024px)
+@media screen and (min-width:1140px)
 {
 
 
@@ -867,13 +879,18 @@ footer{
     .showcase{
         /* padding-left:20rem;
         padding-right: 20rem; */
+        width:100vw;
+        /* justify-content: center;
+        align-items: center; */
     }
 
     .hero{
         flex-direction: row;
-        justify-content: space-between;
+        justify-content:space-between;
         align-items: center;
         /* max-width: 1210px; */
+       
+       width: 100vw;
     }
 
  
@@ -891,6 +908,7 @@ footer{
 
     .hero__content{
         min-width: 600px;
+        /* width:40%; */
         
     }
    
@@ -917,9 +935,11 @@ footer{
     }
 
     .hero__image{
-        /* min-width: 200px; */
+        min-width: 200px;
         /* max-width: 400px; */
         /* max-width: 100%; */
+        /* width:40%; */
+
        
     }
         
@@ -929,12 +949,13 @@ footer{
     }
 
     .showcase__matter{
-        width:40%;
+        width:45%
     }
 
     .showcase__projects{
         justify-content: space-between;
         gap:5rem;
+        /* width: 100vw; */
     }
 
     .container-special{
@@ -953,6 +974,10 @@ footer{
     
     }
 
+    .showcase__projects{
+   
+    }
+
     
     
     .project-container{
@@ -967,17 +992,17 @@ footer{
         padding-left:5rem;
         padding-right: 5rem;
     } */
-    
+/*     
     .project__image{
 
         height:260px;
 
-    }
+    } */
 
     .project__image img{
         /* height:260px; */
-        width: 100%;
-        height: 100%;
+        width: 400px;
+        height:300px;
         object-fit: cover;
     }
 
@@ -994,6 +1019,10 @@ footer{
         padding-right:3rem;
     }
 
+    .container{
+        padding-left:20rem;
+        padding-right: 20rem;
+    }
 
 }
 
@@ -1019,3 +1048,4 @@ footer{
     }
  
 }
+
