@@ -15,15 +15,17 @@
     <title>portfolio</title>
   </head>
   <body>
-    <header class="container">
+    <header class="container" id="nav">
       <div class="brand header__item">
         <div class="logo gradient-text">Jasleen.</div>
         <nav>
           <ul class="nav__list">
             <li class="nav__item"><a href="#">Home</a></li>
-            <li class="nav__item"><a href="#">About</a></li>
-            <li class="nav__item"><a href="#">Projects</a></li>
-            <li class="nav__item"><a href="#">Blog</a></li>
+            <li class="nav__item"><a href="#hero">About</a></li>
+            <li class="nav__item"><a href="#projects">Projects</a></li>
+            <li class="nav__item">
+              <a href="https://jazzcodes.github.io/">Blog</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -36,7 +38,7 @@
     </header>
 
     <main>
-      <div class="hero main__item container">
+      <div class="hero main__item container" id="hero">
         <div class="hero__content hero__item">
           <p class="hero__heading">
             <span class="gradient-text">Hello, I'm Jasleen,</span> a creative
@@ -53,31 +55,101 @@
         </div>
 
         <div class="hero__item">
-          <img src="images/bg-cat.png" alt="" class="hero__image" />
+          <img src="images/jasleen.jpeg" alt="" class="hero__image" />
         </div>
       </div>
 
-      <div class="showcase container main__item">
+      <div class="showcase container main__item" id="projects">
         <div class="showcase__content showcase__item">
-          <div class="showcase__heading">showcase__heading</div>
-          <div class="showcase__matter">showcase__matter</div>
+          <div class="showcase__heading">
+            Look at my <span class="gradient-text"> Projects</span>
+          </div>
+          <div class="showcase__matter">
+            These are some of the projects I've done.
+          </div>
         </div>
         <div class="showcase__projects showcase__item">
-          <div class="project">1</div>
-          <div class="project">2</div>
-          <div class="project">3</div>
-          <div class="project">4</div>
+          <div class="project">
+            <div class="project__image">
+              <a href="https://master--lucky-pika-169b6c.netlify.app/"
+                ><img src="images/clipboard-task.png" alt=""
+              /></a>
+            </div>
+
+            <div class="project__content">
+              <p class="project__heading">Clipboard Landing Page</p>
+              <p class="project__matter">A responsive landing page</p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__image">
+              <a href="https://harmonious-rabanadas-d7aa6a.netlify.app/"
+                ><img src="images/chatapp-task.jpg" alt=""
+              /></a>
+            </div>
+
+            <div class="project__content">
+              <p class="project__heading">ChatApp Illustration</p>
+              <p class="project__matter">A responsive ChatApp Illustration</p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__image">
+              <a href="https://master--lively-sfogliatella-2eeb29.netlify.app/"
+                ><img src="images/suite-task.png" alt=""
+              /></a>
+            </div>
+
+            <div class="project__content">
+              <p class="project__heading">Suite Landing Page</p>
+              <p class="project__matter">A responsive Suite Landing Page</p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__image">
+              <a href="https://fluffy-taffy-a8575f.netlify.app/#"
+                ><img src="images/apple-task.png" alt=""
+              /></a>
+            </div>
+
+            <div class="project__content">
+              <p class="project__heading">Apple Landing Page</p>
+              <p class="project__matter">A responsive Apple Landing Page</p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <footer class="container">
       <div class="info footer__item">
-        <div class="info__item">Logo</div>
-        <div class="footer__item">Copyright</div>
+        <div class="info__item">
+          <div class="logo">Jasleen.</div>
+        </div>
+        <div class="footer__item copyright">&copy; Designed by Jasleen</div>
       </div>
       <div class="contacts footer__item">
-        <div class="footer__item contacts__item">Links</div>
-        <div class="footer__item contacts__item">Socials</div>
+        <div class="footer__item contacts__item">
+          <ul class="links">
+            <li class="link"><a href="#nav">Home</a></li>
+            <li class="link"><a href="#hero">About Us</a></li>
+            <li class="link">
+              <a href="mailto:jasleenbhambra@gmail.com">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item contacts__item">
+          <ul class="image-links">
+            <li class="image-link">
+              <a href="#"><img src="images/icon-facebook.svg" alt="" /></a>
+            </li>
+            <li class="image-link">
+              <a href="#"><img src="images/icon-instagram.svg" alt="" /></a>
+            </li>
+            <li class="image-link">
+              <a href="#"><img src="images/icon-twitter.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
